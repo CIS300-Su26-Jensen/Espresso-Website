@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="espresso.css">
+</head>
+<body>
+    <header>
+	<h1>The Essence of Espresso and What It Can Do</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="classics.html">Classics</a></li>
+		<li><a href="flavors.html">Flavors</a></li>
+		<li><a href="new.html">New</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+	</ul>
+</nav>
+
+<main> 
+   <div class="heading-center">
+        <h2>Feedback</h2>
+    </div>
+    <p class="center">We would love to hear your feedback about our website and the information we provide.</p>
+    <form method="post" action="https://webdevbasics.net/scripts/feedback.php">
+        <label for="myFName">*First Name:</label>
+	<input type="text" id="myFName" name="myFName" required>
+<br>
+	<label for="myLName">*Last Name:</label>
+	<input type="text" id="myLName" name="myLName" required>
+<br>
+    <label for="myEmail">*E-Mail Address:</label>
+	<input type="email" id="myEmail" name="myEmail" required>
+<br>
+    <label for="myAge">Age:</label>
+	<input type="number" id="myAge" name="myAge" min="1" max="120">
+<br>
+    <label for="myGender">Gender:</label>
+	<input type="text" id="myGender" name="myGender">
+<br>
+    <label for="myComments">*Comments:</label>
+	<textarea id="myComments" name="myComments" rows="2" cols="30" required></textarea>
+<br>
+    <input type="submit" value="Submit">
+
+    </form>
+
+<p class="center">We hope that this website has been informative and helpful to you. Enjoy your espresso adventure!</p>
+</main>
+</body>
+</html>
