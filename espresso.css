@@ -29,27 +29,21 @@ main {
 h2 {
 	display: inline-block;
 	font-family: "Times New Roman", serif;
-	margin-top: 1em;
-	margin-bottom: 0.5em;
+	margin: 1em 0 0.5em;
 	padding: 0.2em 0.5em;
 	background-color: #c2a9d3;
 	letter-spacing: 0.15em;
 	text-align: center;
-	border-radius: 3px;
-	float: right; }
+	border-radius: 3px; 
+	align-self: center; }
 
 p {
-	margin-top: 0.2em;
-	display: block;
-	width: 45%;
-	margin-right: 0;
-	margin-left: auto;
+	width: 100%;
+	margin: 0 0 1em;
 	padding: 0.35em 0.6em;
 	background-color: #e9e8f4;
 	border: 1px solid #b9b4d1;
-	border-radius: 3px;
-	font-size: 0.95rem;
-	clear: both; }
+	border-radius: 3px; }
 
 nav ul {
 	list-style: none;
@@ -91,9 +85,6 @@ nav a:hover {
 	width: 100%;
 	height: auto; }
 
-img {
-		float: left; }
-
 .caption {
 	margin-top: 0.5em;
 	width: 100%;
@@ -117,8 +108,7 @@ form {
 	font-size: 15px;}
 
 .heading-center {
-    text-align: center;
-}
+    text-align: center; }
 
 .heading-center h2 {
     display: inline-block;
@@ -127,11 +117,80 @@ form {
     background-color: #c2a9d3;
     border-radius: 3px;
     letter-spacing: 0.15em;
-    float: none;
-}
+    float: none; }
 
 .center {
 	display: block;
 	margin: 0 auto;
+	text-align: center; }
+
+.content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+	gap: 2em;
+	align-items: start; }
+
+.left {
+	grid-column: 1; }
+
+.right {
+	grid-column: 2; 
+	display: flex;
+	flex-direction: column;
+	align-items: center }
+
+.right h2,
+.right h3,
+.right p {
+	display: inline-block;
+	align-self: center;
+	width: fit-content;
+	margin: 0 0 0.75em 0; 
+	padding: 0.2em 0.5em; }
+
+.right video {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	display: block; 
+	float: right; }
+
+h3 {
+	display: inline-block;
+	font-family: "Times New Roman", serif;
+	margin: 0 0.5em;
+	padding: 0.2em 0.5em;
+	background-color: #c2a9d3;
+	letter-spacing: 0.15em;
 	text-align: center;
-}
+	border-radius: 3px; 
+	align-self: center; }
+
+	table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: #e9e8f4;
+    border: 1px solid #b9b4d1; }
+
+th,
+td {
+    border: 2px solid #b9b4d1;
+    padding: 0.75em; }
+
+th {
+    background-color: #c2a9d3;
+    text-align: center;
+    width: 30%; }
+
+td {
+    width: 50%; 
+	text-align: center; }
+
+a {
+    color: #656ab0;
+    text-decoration: none; }
+
+a:hover {
+    color: #b989c2;
+    text-decoration: underline;}
